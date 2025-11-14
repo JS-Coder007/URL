@@ -3,15 +3,35 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Responsive Iframe</title>
+	<title>Smart Crop Recommendation</title>
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+		}
+		.iframe-container {
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100vw;
+			height: 100vh;
+		}
+		iframe {
+			width: 100%;
+			height: 100%;
+			border: none;
+		}
+	</style>
 </head>
 <body>
 
-<div style="padding-bottom: 52.94%; position: relative; display: block; width: 100%; max-width: 850px; margin: 0 auto;">
+<div class="iframe-container">
 	<iframe
 		src="https://jscoder1-ai-crop-recommendation.hf.space"
 		frameborder="0"
-		style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;"
+		scrolling="no"
+		allowfullscreen
 	></iframe>
 </div>
 
